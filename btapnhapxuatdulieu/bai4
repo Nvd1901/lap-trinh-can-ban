@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int a;
+    scanf("%d", &a);
+    float pi = 3.14;
+    printf("%f,%f", 4*pi*a*a,(4*pi*a*a*a)/3 );
+    
+    return 0;
+
+}
