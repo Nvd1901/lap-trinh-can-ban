@@ -1,0 +1,12 @@
+ #include <stdio.h>
+
+int main() {
+    int a;
+    int b;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    printf("%d,%d,%d,%d", a+b,a-b,a*b,a/b);
+    // phep chia hai so nguyen cho ket qua la so nguyen ( phan nguyen cua so thap phan neu co)
+    return 0;
+
+}
