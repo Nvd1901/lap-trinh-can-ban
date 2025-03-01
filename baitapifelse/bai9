@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main()
+{
+    int year,month;
+    printf("nhap thang va nam");
+    scanf("  %d  %d",&month,&year);
+    float x=(int)year% 4;
+    float y=(int)year%100;
+    if (x==0 && y!=0){
+        if(month==2){
+            printf("thang %d nam %d co 29 ngay",month,year);
+            return 0;
+        }
+        if (month==4 ||month==6||month==9||month==11){
+            printf("thang %d nam %d co 30 ngay",month,year);
+            return 0;
+        }
+        if (month <1 || month>12){
+            printf("nhap sai thang");
+            return 0;
+        }
+            else{
+                printf("thang %d nam %d co 31 ngay",month,year);
+                return 0;
+            }
+    }
+        else{
+            if(month==2){
+            printf("thang %d nam %d co 28 ngay",month,year);
+            return 0;
+        }
+        if (month==4 ||month==6||month==9||month==11){
+            printf("thang %d nam %d co 30 ngay",month,year);
+            return 0;
+        }
+        if (month <1 || month>12){
+            printf("nhap sai thang");
+            return 0;
+        }
+            else{
+                printf("thang %d nam %d co 31 ngay",month,year);
+                return 0;
+            }
+            
+        }
+    return 0;
+}
