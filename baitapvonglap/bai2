@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int x;
+    printf("moi nhap so ");
+    scanf(" %d", &x);
+    if (x<=1){
+        printf("day ko phai la so nguyen to");
+    }
+    else{
+        for(int i=2;i*i<=x;i++){
+        if (x%i==0){
+            printf("day ko phai la so nguyen to");
+            return 0;
+            }
+        }
+    printf("day la so nguyen to");
+    }
+
+    return 0;
+}
