@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("moi ban nhap so ");
+    int n;
+    int x=1;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        x=x*i;
+    }
+    printf("giai thua cua n la %d",x);
+    return 0;
+}
