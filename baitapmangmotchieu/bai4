@@ -1,0 +1,35 @@
+#include <stdio.h>
+void nhapham(float a[],int* n){
+    printf("nhap kich thuoc mang ");
+    scanf("%d", n);
+    printf("nhap mang ");
+    for (int i =0;i<*n;i++)
+    {
+        scanf("%f", &a[i]);
+    }
+}
+int main()
+{
+    int n;
+    float a[1000];
+    nhapham(a,&n);
+    float b=a[0];
+    int c=0;
+    float d=a[0];
+    int e=0;
+    for (int i=1;i<n;i++){
+        if(b<a[i]){
+            b=a[i];
+            c=i;
+        }
+    }
+    for (int i=0;i<n;i++){
+        if(d>a[i]){
+            d=a[i];
+            e=i;
+        }
+    }
+    printf("so lon nhat la %f va vi tri trong mang la %d\n", b,c+1);
+    printf("so be nhat la %f va vi tri trong mang la %d", d,e+1);
+    return 0;
+}
