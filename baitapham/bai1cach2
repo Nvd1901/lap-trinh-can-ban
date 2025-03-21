@@ -1,0 +1,24 @@
+#include <stdio.h>
+long long luythua(int a, int b){
+    long long x=1;
+    while(b>0){
+        if(b%2==1){
+            x*=a;
+        }
+        b/=2;
+        a*=a;
+    }
+    return x;
+}
+int main()
+{ int a;
+int b;
+long long x;
+printf("Moi ban nhap co so ");
+scanf("%d",&a);
+printf("Moi ban nhap so mu ");
+scanf("%d",&b);
+x=luythua(a,b);
+printf("luy thua la %lld",x);
+    return 0;
+}
