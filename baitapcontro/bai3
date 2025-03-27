@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf("Moi ban nhap kich thuoc mang ");
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++){
+        printf("Moi ban nhap so thu %d ",i+1);
+        scanf("%d",&a[i]);
+    }
+    int y=a[0]; int x=a[0];
+    for(int i=0;i<n;i++){
+        if (a[i]>y){
+            y=a[i];
+        }
+        else{
+            y=a[i];
+        }
+    }
+    for(int i=0;i<n;i++){
+        if (a[i]<x){
+            x=a[i];
+        }
+    }
+    printf("so lon nhat la %d va so be nhat la %d ", y,x);
+    return 0;
+}
+
