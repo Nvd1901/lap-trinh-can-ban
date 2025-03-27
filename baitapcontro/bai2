@@ -1,8 +1,4 @@
 #include <stdio.h>
-void chuyendoi(int *a, int *b){
-    int x = *a;
-    *a= *b;
-    *b= x;
 }
 int main()
 {
